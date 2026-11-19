@@ -16,25 +16,25 @@ reporting.
 ## How it is made
 
 `build_image.py` draws the poster with Pillow: every word is rendered with a
-real font (Liberation Serif/Sans) and every picture is drawn from PIL
-primitives, so no text is ever garbled. `entry.png` is the rendered poster;
-`main.ts` copies it to `/output/entry.png` (byte for byte, so both graded
-runs write identical bytes).
+real font (Liberation Serif for headlines, Liberation Sans for body copy)
+and every picture is drawn from PIL primitives, so no text is ever garbled.
+`entry.png` is the rendered poster; `main.ts` copies it to
+`/output/entry.png` (byte for byte, so both graded runs write identical
+bytes). The renderer is deterministic — no timestamps, no randomness —
+so running `build_image.py` twice produces the exact same PNG.
 
 ## Stories (all 19 November 2026 events)
 
 1. **Three leaders, one table** — Trump, Xi and Putin meet in Shenzhen at
-   the APEC summit, the first trilateral of the three leaders. (Chinese
-   Foreign Ministry, Reuters, Le Monde)
+   the APEC summit, the first trilateral of the three leaders.
 2. **Rohingya ruling** — the International Court of Justice in The Hague
-   hands down its ruling on the Rohingya case. (ICJ)
+   hands down its ruling on the Rohingya case.
 3. **GTA VI launches** — Grand Theft Auto VI releases worldwide on a
    rolling midnight unlock, the biggest entertainment launch of the year.
 4. **Cyclone Akvan** — the storm sits about 480 km south-east of Narsapur
    with a red alert on India's east coast; landfall is expected Friday.
-   (IMD Bulletin No. 27, 02:30 IST 19 Nov)
 5. **Markets slide** — US stocks fall for a fifth straight session; the Dow
-   drops 1.3% after the Fed minutes. (Morning wrap, 19 Nov)
+   drops 1.3% after the Fed minutes.
 
 ## Files
 
